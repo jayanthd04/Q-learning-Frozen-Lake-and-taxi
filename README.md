@@ -19,3 +19,9 @@ The FrozenLake environment is a 4x4 grid. The goal of our agent is to reach the 
 
 ## About the Taxi-v3 environment
 The taxi environment is also a grid environment where there are four designated locations designated by the colors Red, Green, Yellow, and Blue. The passenger starts the episode at a random location on designated locations and has a destination at one of the other designated locations, while the taxi starts at a random location on the grid and has to pick up the passenger from their pickup location and drop them off at their dropoff location. The taxi can start at 25 different locations and since there are 5 different locations for the the pickup location and 4 different locations for the dropoff location, there are 500 unique discrete states in the environment. The taxi can move left, right, up, down, pickup and dropoff the passenger. The agent is rewarded with -1 reward at each step, +20 for dropping off the passenger and -10 for attempting to pickup a passenger where there is none or dropping off the passenger at a wrong location. 
+
+## FrozenLake-v1 Results 
+My simple Q-learning model was able to reach the treausre chest after just 10,000 training episodes. 
+
+## Taxi-v3 Results
+After training for just 25,000 episodes, my model was able to receive an average score of 7.4 with a standard deviation of 2.79. This means that on average, our model takes around 12 steps to pickup and drop off the passenger. 
